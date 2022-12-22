@@ -1,0 +1,47 @@
+###
+GET http://localhost:9000/api/usuarios2 HTTP/1.1
+
+###
+POST http://localhost:9000/api/usuarios2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_email":"elpepinazo@.com",
+    "usu_clave": "123456",
+    "usu_nombres": "Pepino Moreno",
+	"usu_apellidos": "Alvarez Herrera"
+}
+
+///POST http://localhost:9000/api/libreriac4 HTTP/1.1
+///Content-Type: application/json
+
+///{
+    //"lib_nombre":"EL PRINCIPITO 88",
+    //"lib_autor":"Petit Price 88" ,
+   // "lib_editorial": "Planeta 88"
+///}
+
+###
+
+DELETE http://localhost:9000/api/usuarios2/usu_id/1 HTTP/1.1
+
+
+###
+
+PUT http://localhost:9000/api/usuarios2/usu_id/2 HTTP/1.1
+Content-Type: application/json
+
+
+
+//{
+    //"lib_nombre":"EL PRINCIPITO 99",
+    //"lib_autor":"Petit Price 99",
+   // "lib_editorial": "Planeta 99"
+//}
+
+{
+    "usu_email":"elpepinazo@.com 99",
+    "usu_clave": "123456 99",
+    "usu_nombres": "Pepino Moreno 99",
+	"usu_apellidos": "Alvarez Herrera 99"
+}
